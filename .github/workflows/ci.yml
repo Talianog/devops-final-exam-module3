@@ -10,7 +10,7 @@ env:
   ECS_SERVICE: ${{ secrets.MY_ECS_SERVICE_NAME }}
   ECR_REPOSITORY: ${{ secrets.MY_ECR_REPOSITORY }}
   CONTAINER_NAME: ${{ secrets.MY_CONTAINER_NAME }}
-  ECS_TASK_DEFINITION: task-definition.json
+  ECS_TASK_DEFINITION: final-exam-module3-python-flask-talhadar.json
 
 jobs:
   deploy:
