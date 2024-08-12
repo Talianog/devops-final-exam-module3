@@ -1,0 +1,53 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:199051453468:task-definition/final-exam-module3-python-flask-talhadar:2",
+    "containerDefinitions": [
+        {
+            "name": "final-exam-module3-talhadar",
+            "image": "talianog/devops-final-exam-part2",
+            "cpu": 1024,
+            "memory": 3072,
+            "memoryReservation": 1024,
+            "portMappings": [
+                {
+                    "name": "5000-port",
+                    "containerPort": 5000,
+                    "hostPort": 5000,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "systemControls": []
+        }
+    ],
+    "family": "final-exam-module3-python-flask-talhadar",
+    "executionRoleArn": "arn:aws:iam::199051453468:role/ecsTaskExecutionRole",
+    "networkMode": "bridge",
+    "revision": 2,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2"
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "1024",
+    "memory": "3072",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2024-08-12T16:04:23.363Z",
+    "registeredBy": "arn:aws:iam::199051453468:user/aws22",
+    "tags": []
+}
